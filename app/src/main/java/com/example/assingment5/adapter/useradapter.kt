@@ -19,13 +19,15 @@ val context: Context
     class userViewHolder(view: View):RecyclerView.ViewHolder(view){
         val imgprofile:CircleImageView
         val Usernames:TextView
-     //   val UserEmails:TextView
-        val UserPhones:TextView
+        val fullname:TextView
+        val batchno:TextView
+        val coventryid:TextView
 init {
     imgprofile=view.findViewById(R.id.imgProfile)
-    Usernames=view.findViewById(R.id.tvName)
-   // UserEmails=view.findViewById(R.id.tvSalary)
-    UserPhones=view.findViewById(R.id.tvAddress)
+    Usernames=view.findViewById(R.id.tvusername)
+    fullname=view.findViewById(R.id.fullname)
+    batchno=view.findViewById(R.id.batch)
+    coventryid=view.findViewById(R.id.coventryid)
 }
 
     }
@@ -42,9 +44,11 @@ init {
 
         override fun onBindViewHolder(holder: userViewHolder, position: Int) {
             val user:Users=lstuserr[position]
+
             holder.Usernames.text=user.UserName
-            //holder.UserEmails.text=user.UserEmail
-            holder.UserPhones.text=user.UserPhone
+            holder.fullname.text=user.firname
+            holder.coventryid.text=user.coventryId
+            holder.batchno.text=user.batch
             Glide.with(context)
                 .load(user.Imageurl)
                 .into(holder.imgprofile)

@@ -17,6 +17,11 @@ class signupActivity : AppCompatActivity() {
     private lateinit var coventryid:TextView
     private lateinit var spinner: Spinner
     private var selectedI =""
+    private var firsname=""
+    private var secondname=""
+    private var passwords=""
+    private var usernames=""
+    private var ids=""
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,24 +59,31 @@ class signupActivity : AppCompatActivity() {
     fun Login(view: View){
         when(view?.id){
             R.id.signup->{
-                var batch= selectedI
-                var firname =fname.toString()
-                var secname= sname.toString()
-                var usrname=username.toString()
-                var pass=paswword.toString()
-                var id=coventryid.toString()
-                Toast.makeText(this, "You have singed up ", Toast.LENGTH_SHORT).show()
+                firsname =fname.text.toString()
+                secondname= sname.text.toString()
+                usernames=username.text.toString()
+                passwords=paswword.text.toString()
+                ids=coventryid.text.toString()
+                Toast.makeText(this, "You have singed up $usernames ", Toast.LENGTH_SHORT).show()
                 fname.setText("")
                 sname.setText("")
                 username.setText("")
                 paswword.setText("")
                 coventryid.setText("")
+
             }
             R.id.login->{
                 val intent = Intent(
                     this@signupActivity,MainActivity::class.java
 
                 )
+                    intent.putExtra("batch",selectedI)
+                    intent.putExtra("firstname",firsname)
+                    intent.putExtra("lastname",secondname)
+                    intent.putExtra("password",passwords)
+                    intent.putExtra("id",ids)
+                    intent.putExtra("username",usernames)
+
                 startActivity(intent)
 
             }

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupActivity"
+    android:background="@drawable/customborder">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign-Up"
+            android:textSize="50dp"
+            android:layout_gravity="center"
+            android:textColor="@color/teal_700"
+            android:fontFamily="cursive"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+
+            >
+
+
+
+            <TextView
+                android:fontFamily="cursive"
+                android:textColor="@color/black"
+                android:id="@+id/three"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Coventry-id:"
+                android:textSize="30sp"
+                />
+            <EditText
+                android:fontFamily="cursive"
+                android:textColor="@color/black"
+                android:id="@+id/covhint"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="000"
+                android:textSize="30sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+
+            <TextView
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/password"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="First-Name:"
+                android:textSize="30sp"
+                android:layout_margin="3dp"/>
+
+            <EditText
+                android:id="@+id/fnamehint"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="3dp"
+                android:fontFamily="cursive"
+                android:hint="000"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+
+            <TextView
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/repassword"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Last name:"
+                android:textSize="30sp"
+                android:layout_margin="3dp"/>
+            <EditText
+                android:fontFamily="cursive"
+                    android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/lnamehint"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="000"
+
+                android:textSize="30sp"
+                android:layout_margin="3dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+
+            <TextView
+                android:fontFamily="cursive"
+
+                android:textColor="@color/black"
+                android:id="@+id/email"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Username:"
+                android:textSize="30sp"
+               />
+            <EditText
+                android:fontFamily="cursive"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/userhint"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="000"
+
+                android:textSize="30sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+
+            <TextView
+
+                android:fontFamily="cursive"
+
+                android:textColor="@color/black"
+                android:id="@+id/phone"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Password:"
+                android:textSize="30sp"
+                />
+            <EditText
+                android:inputType="textPassword"
+                android:fontFamily="cursive"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:id="@+id/passhint"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="000"
+
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <Spinner
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <Button
+        android:onClick="Login"
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign-Up"
+            android:backgroundTint="@color/teal_700"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have a account Log In-Below "
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-black"
+            />
+        <Button
+
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log-IN"
+            android:backgroundTint="@color/teal_700"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

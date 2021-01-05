@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/customborder"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/customborder">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log-In"
+            android:textSize="50dp"
+            android:layout_gravity="center"
+            android:textColor="@color/teal_700"
+            android:fontFamily="cursive"
+            android:layout_marginBottom="50dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cardview_shadow_start_color"
+            >
+
+
+
+            <TextView
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/three"
+                android:background="@drawable/customborder"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Username:"
+                android:textSize="60sp"
+
+                android:layout_marginBottom="50dp"
+                />
+            <EditText
+                android:background="@drawable/customborder"
+                android:fontFamily="cursive"
+                 android:textColor="@color/white"
+                android:id="@+id/usernamehint"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:hint="000"
+                android:layout_gravity="right"
+                android:textSize="60sp"
+
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+           >
+
+
+
+            <TextView
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/password"
+                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:text="Password:"
+                android:background="@drawable/customborder"
+                android:textSize="60sp"
+
+                />
+            <EditText
+                android:background="@drawable/customborder"
+                android:fontFamily="cursive"
+                    android:layout_weight="1"
+                android:textColor="@color/white"
+                android:id="@+id/passhint"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:hint="000"
+                android:layout_gravity="right"
+                android:textSize="60sp"
+              />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log-In"
+            android:backgroundTint="@color/teal_700"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account sign up-Below "
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-black"
+            />
+            <Button
+                android:onClick="Signup"
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign-Up"
+                android:backgroundTint="@color/teal_700"
+                />
+
+
+    </LinearLayout>
+</LinearLayout>
